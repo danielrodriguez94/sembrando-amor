@@ -647,3 +647,30 @@ body{
       url("assets/hero-naciones.jpg") center center/cover no-repeat;
   }
 }
+
+/* Transparent homepage logo override */
+.home-hero .hero-logo-panel{
+  width:min(100%,460px);
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  backdrop-filter:none;
+}
+.home-hero .hero-logo-panel::before{display:none}
+.home-hero .hero-logo-image{
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+  border-radius:0;
+  background:transparent;
+  padding:0;
+  box-shadow:none;
+  filter:drop-shadow(0 14px 24px rgba(11,31,58,.16));
+}
+@media(max-width:720px){
+  .home-hero .hero-logo-panel{width:min(92vw,360px)}
+  .home-hero .hero-logo-image{border-radius:0}
+}
