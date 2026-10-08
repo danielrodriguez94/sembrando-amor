@@ -940,3 +940,66 @@ body{
     font-size:clamp(2.35rem,12.5vw,3.15rem);
   }
 }
+
+/* Homepage transparent logo final layout */
+.home-hero .hero-visual{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  width:100%;
+  min-width:0;
+  overflow:visible;
+}
+.home-hero .hero-logo-panel{
+  width:min(100%,500px);
+  max-width:500px;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 !important;
+  margin:0 auto;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+  overflow:visible !important;
+}
+.home-hero .hero-logo-panel::before,
+.home-hero .hero-logo-panel::after{
+  display:none !important;
+  content:none !important;
+}
+.home-hero .hero-logo-image{
+  display:block;
+  width:min(100%,470px) !important;
+  max-width:470px !important;
+  height:auto !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  filter:drop-shadow(0 16px 28px rgba(11,31,58,.16));
+}
+.home-hero .hero-message-card{
+  display:none !important;
+}
+@media(max-width:1020px){
+  .home-hero .hero-logo-panel{width:min(82vw,440px)}
+  .home-hero .hero-logo-image{width:min(82vw,420px) !important;max-width:420px !important}
+}
+@media(max-width:720px){
+  .home-hero .hero-logo-panel{width:min(78vw,330px)}
+  .home-hero .hero-logo-image{width:min(78vw,320px) !important;max-width:320px !important}
+}
