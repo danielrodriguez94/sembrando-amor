@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#153a32" />
+  <meta name="description" content="Realiza una aportación para apoyar los programas de Sembrando con Amor a las Naciones." />
+  <title>Donar | Sembrando con Amor a las Naciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/logo-sembrando-con-amor.png" />
+</head>
+<body class="donation-page">
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Sembrando con Amor a las Naciones - Inicio">
+    <img class="brand-logo-image" src="assets/logo-sembrando-con-amor.png" alt="Logo Sembrando con Amor a las Naciones" />
+    <span class="brand-copy"><strong>SEMBRANDO CON AMOR</strong><small>A LAS NACIONES</small></span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="nav" id="nav" aria-label="Navegación principal"><a class="nav-link " href="index.html">Inicio</a><a class="nav-link " href="nosotros.html">Nosotros</a><a class="nav-link " href="mision-vision.html">Misión y Visión</a><a class="nav-link " href="programas.html">Programas</a><a class="nav-link " href="academias.html">Academias</a><a class="nav-link " href="impacto.html">Impacto</a><a class="nav-link " href="transparencia.html">Transparencia</a><a class="nav-link " href="contacto.html">Contacto</a><a class="btn btn-primary btn-small" href="donar.html">Donar</a></nav>
+</header>
+<main>
+<section class="page-hero donation-hero"><div class="container narrow reveal"><p class="eyebrow">Donaciones</p><h1>Tu generosidad puede convertirse en una oportunidad que permanezca.</h1><p>Elige el monto, la frecuencia y el programa que deseas apoyar. El pago se completa de forma segura mediante Stripe Checkout.</p></div></section>
+<section class="section donation-section"><div class="container donation-layout"><div class="donation-copy reveal"><p class="eyebrow">Qué puede hacer tu aportación</p><h2>Ayudar hoy y construir posibilidades para mañana.</h2><p>Las aportaciones pueden apoyar academias, talleres, brigadas, programas para madres y familias, iniciativas de inclusión o necesidades prioritarias de la fundación.</p><ul class="check-list"><li>Formación accesible para niños y jóvenes</li><li>Materiales y herramientas para talleres</li><li>Apoyo a brigadas y acción comunitaria</li><li>Programas de fortalecimiento familiar</li><li>Expansión de academias y formación en línea</li></ul><div class="secure-box"><strong>Pago procesado por Stripe</strong><span>Los datos de tu tarjeta no pasan por este sitio web.</span></div></div><form class="donation-form reveal" id="donationForm"><div class="form-head"><p class="eyebrow">Haz tu aportación</p><h2>Elige cómo deseas sembrar.</h2></div><div class="field-group"><label>Frecuencia</label><div class="segmented"><button type="button" class="frequency-btn active" data-frequency="once">Una vez</button><button type="button" class="frequency-btn" data-frequency="monthly">Mensual</button></div><input type="hidden" id="frequencyInput" value="once"></div><div class="field-group"><label for="customAmount">Monto en USD</label><div class="amount-grid"><button type="button" class="amount-btn" data-amount="25">$25</button><button type="button" class="amount-btn active" data-amount="50">$50</button><button type="button" class="amount-btn" data-amount="100">$100</button><button type="button" class="amount-btn" data-amount="250">$250</button></div><div class="currency-input"><span>$</span><input id="customAmount" type="number" min="5" max="100000" step="1" value="50" inputmode="decimal" required><b>USD</b></div></div><div class="field-group"><label for="designation">Dirigir a</label><select id="designation"><option value="general">Donde más se necesite</option><option value="academies">Academias y talleres</option><option value="brigades">Brigadas y ayuda comunitaria</option><option value="mothers">Madres y familias</option><option value="inclusion">Programas de inclusión</option></select></div><button class="btn btn-accent full donate-submit" id="donateSubmit" type="submit">Continuar a pago seguro</button><p id="formStatus" class="form-status" aria-live="polite"></p><p class="form-legal">Al continuar, serás redirigido a Stripe. La posible deducibilidad fiscal depende del estatus legal y fiscal vigente de la organización.</p></form></div></section>
+<section class="section section-soft"><div class="container"><div class="section-heading centered reveal"><p class="eyebrow">Transparencia</p><h2>Queremos que cada aportación tenga propósito y trazabilidad.</h2><p>Consulta cómo planteamos publicar el uso de recursos y los resultados de los proyectos.</p><a class="btn btn-primary" href="transparencia.html">Ver transparencia</a></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><div class="footer-logo"><img class="footer-logo-image" src="assets/logo-sembrando-con-amor.png" alt="Logo Sembrando con Amor a las Naciones" /><div><strong>Sembrando con Amor</strong><small>a las Naciones</small></div></div><p>Servimos para formar, acompañar y dejar capacidades que permanezcan.</p></div>
+    <div><h3>Fundación</h3><a href="nosotros.html">Nosotros</a><a href="mision-vision.html">Misión y Visión</a><a href="programas.html">Programas</a><a href="impacto.html">Impacto</a></div>
+    <div><h3>Participa</h3><a href="academias.html">Academias</a><a href="donar.html">Donar</a><a href="contacto.html">Contacto</a><a href="transparencia.html">Transparencia</a></div>
+    <div><h3>Información</h3><a href="privacidad.html">Privacidad</a><a href="politica-donaciones.html">Política de donaciones</a><span class="footer-note">Canales oficiales de contacto por conectar.</span></div>
+  </div>
+  <div class="container footer-bottom"><span>© <span id="year"></span> Sembrando con Amor a las Naciones.</span><span>Todos los derechos reservados.</span></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
