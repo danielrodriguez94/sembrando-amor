@@ -741,3 +741,91 @@ body{
   .home-hero .hero-logo-image{max-height:300px}
   .home-hero .hero-message-card{width:min(92vw,340px);padding:22px 20px}
 }
+
+/* Homepage logo full-view correction */
+.home-hero .hero-grid{
+  grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);
+  gap:clamp(42px,5vw,76px);
+}
+.home-hero .hero-visual{
+  width:100%;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  padding:0;
+  overflow:visible;
+}
+.home-hero .hero-logo-panel{
+  width:min(100%,430px);
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent!important;
+  box-shadow:none!important;
+  backdrop-filter:none;
+  overflow:visible!important;
+  position:relative;
+}
+.home-hero .hero-logo-panel::before{display:none!important}
+.home-hero .hero-logo-image{
+  display:block;
+  width:100%!important;
+  height:auto!important;
+  max-width:430px;
+  max-height:none!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center center;
+  margin:0 auto;
+  padding:0!important;
+  border:0;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  filter:drop-shadow(0 14px 24px rgba(11,31,58,.16));
+}
+.home-hero .hero-message-card{
+  width:min(100%,390px);
+  margin:0 auto;
+  padding:22px 26px 24px;
+  border-radius:22px;
+  background:rgba(255,255,255,.92);
+  border:1px solid rgba(11,31,58,.09);
+  box-shadow:0 16px 44px rgba(11,31,58,.10);
+  backdrop-filter:blur(10px);
+  text-align:center;
+}
+@media(max-width:1020px){
+  .home-hero .hero-grid{
+    grid-template-columns:1fr;
+    gap:38px;
+  }
+  .home-hero .hero-visual{
+    max-width:520px;
+    margin:0 auto;
+  }
+  .home-hero .hero-logo-panel,
+  .home-hero .hero-logo-image{
+    width:min(100%,400px)!important;
+    max-width:400px;
+  }
+}
+@media(max-width:720px){
+  .home-hero .hero-grid{padding:56px 0 64px;gap:32px}
+  .home-hero .hero-visual{gap:16px}
+  .home-hero .hero-logo-panel,
+  .home-hero .hero-logo-image{
+    width:min(86vw,340px)!important;
+    max-width:340px;
+  }
+  .home-hero .hero-message-card{
+    width:min(90vw,340px);
+    padding:20px 18px 22px;
+  }
+}
