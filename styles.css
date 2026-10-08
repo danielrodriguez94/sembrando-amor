@@ -17,10 +17,10 @@
 
 
 /* Official foundation logo */
-.brand-logo-image{width:58px;height:58px;object-fit:cover;border-radius:50%;flex:0 0 58px;box-shadow:0 5px 18px rgba(11,31,58,.14)}
-.footer-logo-image{width:62px;height:62px;object-fit:cover;border-radius:50%;flex:0 0 62px;box-shadow:0 7px 22px rgba(0,0,0,.22)}
+.brand-logo-image{width:64px;height:64px;object-fit:contain;border-radius:16px;flex:0 0 64px;background:#fff;padding:3px;box-shadow:0 7px 20px rgba(11,31,58,.14)}
+.footer-logo-image{width:70px;height:70px;object-fit:contain;border-radius:16px;flex:0 0 70px;background:#fff;padding:4px;box-shadow:0 8px 24px rgba(0,0,0,.22)}
 .hero-logo-wrap{display:grid;place-items:center;padding:26px 26px 10px}
-.hero-logo-image{width:min(100%,430px);aspect-ratio:1/1;object-fit:cover;border-radius:28px;box-shadow:0 28px 80px rgba(0,0,0,.32)}
-@media(max-width:720px){.brand-logo-image{width:48px;height:48px;flex-basis:48px}.footer-logo-image{width:54px;height:54px;flex-basis:54px}.hero-logo-wrap{padding:18px 18px 6px}.hero-logo-image{border-radius:22px}}
+.hero-logo-image{width:min(100%,460px);aspect-ratio:1/1;object-fit:contain;border-radius:28px;background:#fff;padding:10px;box-shadow:0 28px 80px rgba(0,0,0,.32)}
+@media(max-width:720px){.brand-logo-image{width:52px;height:52px;flex-basis:52px}.footer-logo-image{width:58px;height:58px;flex-basis:58px}.hero-logo-wrap{padding:18px 18px 6px}.hero-logo-image{border-radius:22px;padding:7px}}
 
-.success-logo{width:150px;height:150px;object-fit:cover;border-radius:50%;margin:0 auto 24px;box-shadow:0 20px 50px rgba(0,0,0,.28)}
+.success-logo{width:160px;height:160px;object-fit:contain;border-radius:22px;background:#fff;padding:8px;margin:0 auto 24px;box-shadow:0 20px 50px rgba(0,0,0,.28)}
