@@ -336,3 +336,233 @@ body{
   .hero-logo-image{width:min(100%,220px)}
   .cta-card{padding:28px}
 }
+
+
+/* WHITE PRIMARY + LANDSCAPE HERO */
+body{
+  background:
+    radial-gradient(circle at 8% 18%,rgba(201,162,39,.035),transparent 28%),
+    radial-gradient(circle at 92% 35%,rgba(22,54,95,.035),transparent 30%),
+    #FFFFFF;
+}
+.site-header{
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid rgba(11,31,58,.08);
+  box-shadow:0 10px 35px rgba(11,31,58,.055);
+}
+.brand-logo-image{
+  object-fit:contain;
+  background:#fff;
+  border-radius:14px;
+}
+.home-hero{
+  min-height:calc(100vh - 82px);
+  display:grid;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  color:var(--ink);
+  background:#fff;
+  isolation:isolate;
+}
+.home-hero .hero-bg{
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  background:
+    linear-gradient(90deg,
+      rgba(255,255,255,.99) 0%,
+      rgba(255,255,255,.97) 28%,
+      rgba(255,255,255,.88) 45%,
+      rgba(255,255,255,.46) 64%,
+      rgba(255,255,255,.14) 100%),
+    linear-gradient(180deg,rgba(255,255,255,.10),rgba(11,31,58,.10)),
+    url("assets/hero-naciones.jpg") center center/cover no-repeat;
+}
+.home-hero:after{
+  content:"";
+  position:absolute;
+  inset:auto -12% -34% -12%;
+  height:55%;
+  z-index:-1;
+  background:
+    radial-gradient(ellipse at 52% 0%,rgba(255,255,255,.98) 0 34%,rgba(255,255,255,.72) 55%,transparent 72%);
+  pointer-events:none;
+}
+.home-hero .hero-grid{
+  position:relative;
+  z-index:2;
+  grid-template-columns:1.08fr .92fr;
+  gap:58px;
+  padding:76px 0 82px;
+}
+.home-hero .hero-copy{
+  max-width:720px;
+  padding:28px 0;
+}
+.home-hero .hero-copy h1{
+  color:#0B1F3A;
+  text-shadow:0 2px 18px rgba(255,255,255,.72);
+}
+.gold-word{
+  background:linear-gradient(135deg,#A87910 0%,#C9A227 45%,#E4C35D 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.home-hero .hero-text{
+  color:#40506A;
+  max-width:650px;
+  text-shadow:0 1px 10px rgba(255,255,255,.72);
+}
+.home-hero .btn-accent{
+  background:linear-gradient(135deg,#E5C55D,#C9A227 58%,#B58818);
+  color:#0B1F3A;
+  box-shadow:0 12px 28px rgba(201,162,39,.23);
+}
+.home-hero .btn-accent:hover{
+  background:linear-gradient(135deg,#EFD77D,#D2AD32 58%,#BC8E1A);
+}
+.home-hero .btn-ghost{
+  border-color:rgba(11,31,58,.20);
+  color:#0B1F3A;
+  background:rgba(255,255,255,.78);
+  box-shadow:0 8px 24px rgba(11,31,58,.07);
+  backdrop-filter:blur(10px);
+}
+.home-hero .trust-row{
+  border-top:1px solid rgba(11,31,58,.12);
+}
+.home-hero .trust-row strong{color:#0B1F3A}
+.home-hero .trust-row span{color:#667085}
+.hero-visual{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  position:relative;
+}
+.hero-logo-panel{
+  width:min(100%,420px);
+  padding:12px;
+  border-radius:32px;
+  background:rgba(255,255,255,.96);
+  border:1px solid rgba(201,162,39,.30);
+  box-shadow:
+    0 30px 90px rgba(11,31,58,.18),
+    0 0 0 8px rgba(255,255,255,.20);
+  backdrop-filter:blur(14px);
+  position:relative;
+  z-index:2;
+}
+.hero-logo-panel:before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:32px;
+  padding:1px;
+  background:linear-gradient(145deg,rgba(226,196,90,.78),rgba(255,255,255,.25),rgba(22,54,95,.18));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
+}
+.home-hero .hero-logo-image{
+  width:100%;
+  height:auto;
+  aspect-ratio:1/1;
+  object-fit:contain;
+  border-radius:24px;
+  background:#fff;
+  padding:0;
+  box-shadow:none;
+}
+.hero-message-card{
+  width:min(92%,380px);
+  margin-top:-24px;
+  padding:42px 28px 25px;
+  border-radius:0 0 26px 26px;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.97),rgba(247,250,255,.94));
+  border:1px solid rgba(11,31,58,.10);
+  box-shadow:0 22px 55px rgba(11,31,58,.13);
+  text-align:center;
+  position:relative;
+  z-index:1;
+}
+.hero-message-card p{
+  margin-bottom:10px;
+  color:#B58A18;
+  font-size:.72rem;
+  text-transform:uppercase;
+  font-weight:800;
+  letter-spacing:.14em;
+}
+.hero-message-card h2{
+  color:#0B1F3A;
+  font-size:1.8rem;
+  margin-bottom:10px;
+}
+.hero-message-card span{
+  color:#667085;
+  font-size:.88rem;
+}
+.intro-section{
+  background:
+    radial-gradient(circle at 10% 0%,rgba(201,162,39,.07),transparent 28%),
+    radial-gradient(circle at 95% 65%,rgba(22,54,95,.055),transparent 32%),
+    linear-gradient(180deg,#FFFFFF 0%,#FBFCFE 100%);
+}
+.info-card,.trans-card,.path-card,.academy-card,.donation-form,.contact-card{
+  background:linear-gradient(145deg,#FFFFFF 0%,#FFFFFF 72%,#F8FAFD 100%);
+}
+.path-card{
+  border-color:rgba(11,31,58,.10);
+}
+.path-card:hover{
+  border-color:rgba(201,162,39,.32);
+  box-shadow:0 26px 70px rgba(11,31,58,.11);
+}
+.quote-band{
+  background:
+    radial-gradient(circle at 18% 20%,rgba(226,196,90,.18),transparent 28%),
+    radial-gradient(circle at 82% 72%,rgba(55,91,139,.24),transparent 34%),
+    linear-gradient(135deg,#061428 0%,#0B1F3A 55%,#16365F 100%);
+}
+.cta-card{
+  background:
+    radial-gradient(circle at 12% 12%,rgba(226,196,90,.17),transparent 27%),
+    linear-gradient(135deg,#07172D,#0B1F3A 58%,#173B68);
+  border:1px solid rgba(226,196,90,.18);
+  box-shadow:0 30px 90px rgba(11,31,58,.20);
+}
+.page-hero{
+  background:
+    radial-gradient(circle at 12% 15%,rgba(201,162,39,.055),transparent 30%),
+    radial-gradient(circle at 88% 65%,rgba(22,54,95,.05),transparent 34%),
+    linear-gradient(180deg,#FFFFFF,#F8FAFD);
+}
+.section-soft{
+  background:
+    radial-gradient(circle at 92% 8%,rgba(201,162,39,.055),transparent 26%),
+    linear-gradient(180deg,#FBFCFE,#F6F8FB);
+}
+@media(max-width:1020px){
+  .home-hero .hero-grid{grid-template-columns:1fr;gap:42px}
+  .hero-visual{max-width:520px;margin-inline:auto;width:100%}
+  .home-hero .hero-bg{
+    background:
+      linear-gradient(180deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.87) 58%,rgba(255,255,255,.62) 100%),
+      url("assets/hero-naciones.jpg") center center/cover no-repeat;
+  }
+}
+@media(max-width:720px){
+  .home-hero .hero-grid{padding:58px 0 66px}
+  .home-hero .hero-copy{text-align:left}
+  .home-hero .hero-copy h1{font-size:clamp(3rem,14vw,4.5rem)}
+  .hero-logo-panel{width:min(92vw,360px);border-radius:26px}
+  .home-hero .hero-logo-image{border-radius:20px}
+  .hero-message-card{width:min(86vw,330px);padding:38px 22px 22px}
+  .hero-message-card h2{font-size:1.55rem}
+}
