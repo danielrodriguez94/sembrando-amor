@@ -1079,3 +1079,61 @@ body{
   .home-hero .hero-logo-image{max-height:220px}
   .home-hero .hero-message-card{width:min(88vw,310px);padding:18px 18px 19px}
 }
+
+/* Compact homepage emblem final */
+.home-hero .hero-visual{
+  gap:20px;
+  padding:12px 0;
+}
+.home-hero .hero-logo-panel{
+  width:220px !important;
+  max-width:220px !important;
+  margin:0 auto;
+  padding:0 !important;
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+}
+.home-hero .hero-logo-panel::before{display:none !important}
+.home-hero .hero-logo-image{
+  width:220px !important;
+  max-width:220px !important;
+  height:auto !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  aspect-ratio:auto !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  padding:0 !important;
+  margin:0 auto !important;
+  box-shadow:none !important;
+  filter:drop-shadow(0 10px 18px rgba(11,31,58,.14));
+}
+.home-hero .hero-message-card{
+  width:min(100%,330px);
+  margin:0;
+  padding:20px 22px 22px;
+  border-radius:22px;
+}
+.home-hero .hero-message-card h2{
+  font-size:clamp(1.3rem,1.8vw,1.6rem);
+}
+@media(max-width:1020px){
+  .home-hero .hero-logo-panel,
+  .home-hero .hero-logo-image{
+    width:195px !important;
+    max-width:195px !important;
+  }
+  .home-hero .hero-message-card{width:min(100%,315px)}
+}
+@media(max-width:720px){
+  .home-hero .hero-logo-panel,
+  .home-hero .hero-logo-image{
+    width:170px !important;
+    max-width:170px !important;
+  }
+  .home-hero .hero-message-card{width:min(90vw,300px)}
+}
