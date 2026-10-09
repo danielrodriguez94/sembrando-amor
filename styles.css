@@ -1124,16 +1124,16 @@ body{
 @media(max-width:1020px){
   .home-hero .hero-logo-panel,
   .home-hero .hero-logo-image{
-    width:195px !important;
-    max-width:195px !important;
+    width:220px !important;
+    max-width:220px !important;
   }
   .home-hero .hero-message-card{width:min(100%,315px)}
 }
 @media(max-width:720px){
   .home-hero .hero-logo-panel,
   .home-hero .hero-logo-image{
-    width:170px !important;
-    max-width:170px !important;
+    width:190px !important;
+    max-width:190px !important;
   }
   .home-hero .hero-message-card{width:min(90vw,300px)}
 }
